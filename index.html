@@ -1,54 +1,206 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Gustavo Duarte Portifolio's</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
-<body>
-   
-    <div id="grad1" class="div-principal">
-        <div>
-            <img src="./barata.gif">
+  <head>
+    <title>szvieira</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f7e8e6478a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="text-content">
+          <div>
+            <img src="./morlor.jpg" alt="A pitbull" />
+          </div>
+          <p class="description" href="">
+            I'm Gustavo Vieira, a cybersecurity analyst junior. I entered the
+            world of cybersecurity when I was 17 years old in 2022. Since then
+            I'm improving my knowledge in cybersecurity participating in
+            projects of: IAM, CIAM, PAM, DLP, SIEM, cryptographic operations and
+            DEVOPS. In these projects I was able to do some tasks like: the
+            colect, process and storage of the logs of the tools using syslog
+            and logstash, analyze the logs and metrics and create dasboards
+            using grafana, prometheus and opensearch, use containers to deploy
+            the solutions, integrate the solutions through API and software
+            development and develop playbooks for process automation.
+          </p>
         </div>
-        <div class="design">
-            <img src="./design.jpeg">
+        <div class="text-content-sc">
+          <p class="description-sc">
+            I say that Linux is quality of life while developing, so about that,
+            I'm a heavy linux user and I love to rice my system. In high school
+            I got a software development diploma and started programming there.
+            Nowdays, I consider myself a Full Stack Developer, I've had
+            experience with back-end in some of my projects, developing the
+            backend itself, integrating microservices and APIs. Same with
+            front-end. Programming is my passion.
+          </p>
         </div>
-        <a href="google.com">Pórtifólio do Gugu</a>
-        <div class="gato">
-            <img src="./GATO.png">
+        <div class="project-section">
+          <p class="pr"># Projects</p>
+          <div class="all-prs">
+            <div class="pr-content">
+              <p class="pr-name">- DemoApp - Private</p>
+              <p class="pr-desc">
+                An application made in Django framwework that uses a crypography
+                software API to show the data based on the user ruleset.
+              </p>
+            </div>
+            <div class="pr-content">
+              <p class="pr-name">- Backup Automation Tool - Private</p>
+              <p class="pr-desc">
+                An application made in python that create and control the flow
+                of the backups from a specific tool.
+              </p>
+            </div>
+            <div class="pr-content">
+              <p class="pr-name">- Token APP - Private</p>
+              <p class="pr-desc">
+                A microservice that manage the requisitions and uses crypography
+                tools to encrypt and decrypt the data. Made in FastAPI.
+              </p>
+            </div>
+            <div class="pr-content">
+              <a
+                href="https://github.com/StartFuture/WorkStation"
+                class="pr-name"
+                >- Start Future Bootcamp</a
+              >
+              <p class="pr-desc">
+                Hackaton Project To solve remote's problem, using the idea of a
+                private box available at some locations like subways, malls,
+                etc. A application was developted and I was responsible for the
+                front-end.
+              </p>
+            </div>
+          </div>
         </div>
-        
+      </div>
+      <footer>
+        <div class="ft-a">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/gustavo-vieira-dev/"
+            ><i class="fa-brands fa-linkedin" style="color: #735dbd"></i
+          ></a>
+          <a target="_blank" href="https://github.com/szvieira"
+            ><i class="fa-brands fa-github" style="color: #735dbd"></i
+          ></a>
+          <a target="_blank" href="mailto:guga9055@gmail.com"
+            ><i class="fa-regular fa-envelope" style="color: #735dbd"></i
+          ></a>
+        </div>
+        <p>made by vieira ©</p>
+      </footer>
     </div>
-   
-</body>
-<style>
-#grad1 {
-  height: 25em;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
-}
-.design{
-    margin-right: 50%
-}
-*{
-    text-decoration: none;
-    color: white;
-    margin: 0
-}
-.div-principal{
-    
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    color:white;
-    font-size:40px;
-    font-weight:bold
-}
-.gato{
-    margin-left: 50%
-}
-
-</style>
+  </body>
+  <style>
+    * {
+      text-decoration: none;
+      color: white;
+      margin: 0;
+      font-family: "Titillium Web", sans-serif;
+    }
+    body {
+      background-color: #060613;
+    }
+    .title-name {
+      background-color: #283d6a;
+      width: 4.2em;
+      border-radius: 0.1em;
+      margin-top: 0.4em;
+    }
+    .title-name p {
+      font-size: 0.6em;
+    }
+    .text-content,
+    .text-content-sc {
+      width: 50%;
+      display: flex;
+    }
+    .text-content {
+      margin-top: 1em;
+    }
+    .description,
+    .description-sc {
+      font-size: 0.4em;
+      text-align: justify;
+    }
+    .description {
+      margin-left: 2em;
+    }
+    .project-section {
+      width: 50%;
+      margin-top: 1em;
+    }
+    .all-prs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 27px;
+    }
+    .pr {
+      font-size: 1em;
+      text-align: start;
+      font-weight: bold;
+    }
+    .pr-desc {
+      text-align: justify;
+      font-size: 0.4em;
+    }
+    .pr-content {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      align-items: start;
+    }
+    .pr-name {
+      color: #735dbd;
+      font-size: 0.5em !important;
+    }
+    footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+    footer p {
+      font-size: 0.5em;
+    }
+    footer i {
+      font-size: 0.8em;
+    }
+    .ft-a {
+      display: flex;
+      gap: 0.2em;
+    }
+    .content {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+  </style>
 </html>
